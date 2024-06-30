@@ -1,4 +1,58 @@
 body {
-  background-color: blue;
-  color: aliceblue;
+  background-color: rgb(195, 195, 239);
+}
+
+select {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 36px;
+}
+
+h2 {
+  margin: 0, 0, 5px;
+  font-size: 28px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: aliceblue;
+  padding: 30px;
+  box-shadow: 10, 10, 10, rgba(125, 125, 235, 0.04);
+}
+
+.city {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+}
+
+.city:last-child {
+  border: none;
+}
+
+.date {
+  opacity: 0.7;
+}
+
+.time {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 18px;
+  vertical-align: middle;
+  line-height: 36px;
+}
+
+footer {
+  text-align: center;
 }
