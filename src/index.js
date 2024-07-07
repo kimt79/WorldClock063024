@@ -3,8 +3,9 @@ function updateTime() {
   let kansasCityElement = document.querySelector("#kansas-city");
   if (kansasCityElement) {
     let kansasCityDateElement = kansasCityElement.querySelector(".date");
-    let kansasCityTimeElement = kansasCityDateElement.querySelector(".time");
+    let kansasCityTimeElement = kansasCityElement.querySelector(".time");
     let kansasCityTime = moment().tz("America/Chicago");
+    console.log("kansasCityTime");
 
     kansasCityDateElement.innerHTML = kansasCityTime.format("MMMM	Do YYYY");
     kansasCityTimeElement.innerHTML = kansasCityTime.format(
