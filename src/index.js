@@ -5,7 +5,7 @@ function updateTime() {
     let kansasCityDateElement = kansasCityElement.querySelector(".date");
     let kansasCityTimeElement = kansasCityElement.querySelector(".time");
     let kansasCityTime = moment().tz("America/Chicago");
-    console.log("kansasCityTime");
+    console.log(kansasCityTime);
 
     kansasCityDateElement.innerHTML = kansasCityTime.format("MMMM	Do YYYY");
     kansasCityTimeElement.innerHTML = kansasCityTime.format(
@@ -19,6 +19,7 @@ function updateTime() {
     let parisDateElement = parisElement.querySelector(".date");
     let parisTimeElement = parisElement.querySelector(".time");
     let parisTime = moment().tz("Europe/Paris");
+    console.log(parisTime);
 
     parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
     parisTimeElement.innerHTML = parisTime.format(
