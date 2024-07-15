@@ -5,7 +5,7 @@ function updateTime() {
     let kansasCityDateElement = kansasCityElement.querySelector(".date");
     let kansasCityTimeElement = kansasCityElement.querySelector(".time");
     let kansasCityTime = moment().tz("America/Chicago");
-    console.log(kansasCityTime);
+   
 
     kansasCityDateElement.innerHTML = kansasCityTime.format("MMMM	Do YYYY");
     kansasCityTimeElement.innerHTML = kansasCityTime.format(
@@ -19,7 +19,7 @@ function updateTime() {
     let parisDateElement = parisElement.querySelector(".date");
     let parisTimeElement = parisElement.querySelector(".time");
     let parisTime = moment().tz("Europe/Paris");
-    console.log(parisTime);
+    
 
     parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
     parisTimeElement.innerHTML = parisTime.format(
@@ -27,6 +27,19 @@ function updateTime() {
     );
   }
 }
+
+//Havannah
+let havanaElement = document.querySelector("#havana");
+  if (havannahElement) {
+    let havanaDateElement = havanaElement.querySelector(".date");
+    let havanaTimeElement = havanaElement.querySelector(".time");
+    let havanaTime = moment().tz("America/Havana");
+    
+
+    havanaDateElement.innerHTML = havanaTime.format("MMMM	Do YYYY");
+    havanaTimeElement.innerHTML = havanaTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
